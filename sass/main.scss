@@ -25,6 +25,20 @@ h3 {
   font-family: $title-font;
 }
 
+.logoheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 63px;
+  padding: 14px 89px 13px 89px;
+
+  img {
+    width: 197px;
+    height: 36px;
+  }
+}
+
 // Tablettes (min-width: 768px)
 @media (min-width: 768px) {
   body {
