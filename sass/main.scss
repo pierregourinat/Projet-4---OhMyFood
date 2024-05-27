@@ -4,11 +4,37 @@
 @import "partials/layout";
 @import "partials/components";
 
-// Homepage
-
-body {
-  // font-family: Arial, sans-serif;
+// Reset CSS navigateur
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+// Styles de base - Mobile first
+body {
+  font-family: $font-stack;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $title-font;
+}
+
+// Tablettes (min-width: 768px)
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+// Desktop (min-width: 1024px)
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
 }
