@@ -13,8 +13,6 @@ body {
   padding: 0;
 }
 
-h1,
-h2,
 h3 {
   font-family: $title-font;
 }
@@ -27,23 +25,41 @@ header {
   background: $white;
 
   .logoHeader {
+    position: relative;
+    z-index: 1;
     padding: 14px 89px 13px 89px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   }
+
   .logoTitle {
     padding: 0px 19px 0px 16px;
     font-family: $title-font;
     font-size: 30px;
   }
-  .search {
+
+  .formNav {
+    background: $light-grey;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .locationIcon {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: $dark-grey;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
   }
   input {
-    width: 100%;
     border: none;
     height: 50px;
+    font-weight: 500;
+    color: $dark-grey;
     background: $light-grey;
+    // text-align: center;
   }
 }
 
