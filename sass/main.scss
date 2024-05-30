@@ -70,12 +70,11 @@ header {
 
 // SECTION EXPLORER + BUTTON
 
-.explorer {
+.Explorer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 39px;
-
+  padding: 39px 0 57px;
   h1 {
     width: 275px;
     height: 68px;
@@ -95,6 +94,57 @@ header {
     line-height: normal;
     text-align: center;
     color: $dark-grey;
+  }
+}
+
+//SECTION FONCTIONNEMENT
+
+.Fonctionnement {
+  background: $white;
+  padding: 48px 20px 68px;
+}
+.stepsFonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+  padding: 0 10px 0;
+  .steps {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    height: 72px;
+    background: $background-color;
+    border-radius: 20px;
+    box-shadow: $shadow-step;
+  }
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background: $primary-color;
+    color: $white;
+    font-size: 14.182px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .icon-grey {
+    color: $icon-grey;
+  }
+  .icon-purple {
+    color: $primary-color;
+  }
+  .stepsText {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 }
 
