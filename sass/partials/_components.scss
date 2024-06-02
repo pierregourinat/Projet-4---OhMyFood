@@ -1,6 +1,8 @@
 @import "variables";
 @import "reset";
 
+// BOUTON CTA
+
 .btnGradient {
   display: inline-block;
   width: 218px;
@@ -33,6 +35,8 @@
   }
 }
 
+// CARTE RESTAURANT
+
 .Card {
   text-decoration: none;
 
@@ -43,25 +47,53 @@
     margin: 0;
     padding: 15px;
     color: $black;
+    background: $white;
+    border-radius: 0 0 15px 15px;
   }
 
   .badgeNew {
     position: absolute;
-    bottom: 275px;
+    bottom: 235px;
     left: 245px;
+  }
+
+  .cardTitle {
+    font-family: $font-stack;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .cardSubtitle {
+    font-family: $font-stack;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
 
   .iconHeart {
     width: 22px;
     height: 21px;
   }
+
   .cardImg {
+    height: 200px;
     overflow: hidden;
   }
+
+  .verticalPic {
+    object-position: 0 -139px;
+  }
+
   img {
     border-radius: 15px 15px 0 0;
+    background-repeat: no-repeat;
   }
 }
+
+// BADGE "NOUVEAU" CARTES RESTAURANTS
 
 .badgeNew {
   width: 80px;
