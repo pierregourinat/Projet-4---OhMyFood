@@ -22,7 +22,7 @@
   );
   border: none;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     background: linear-gradient(
@@ -30,8 +30,9 @@
         rgba(255, 255, 255, 0.15) 0%,
         rgba(255, 255, 255, 0.15) 100%
       ),
-      linear-gradient(201deg, $primary-color -5.2%, $secondary-color 110.74%);
+      linear-gradient(201deg, $secondary-color -5.2%, $primary-color 110.74%);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    opacity: 1;
   }
 }
 
@@ -39,9 +40,9 @@
 
 .Card {
   text-decoration: none;
+  position: relative;
 
   .cardContent {
-    position: relative;
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -53,8 +54,8 @@
 
   .badgeNew {
     position: absolute;
-    bottom: 235px;
-    left: 245px;
+    top: 1em;
+    right: 1em;
   }
 
   .cardTitle {
@@ -81,6 +82,7 @@
   .cardImg {
     height: 200px;
     overflow: hidden;
+    object-fit: cover;
   }
 
   .verticalPic {
