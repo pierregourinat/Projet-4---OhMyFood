@@ -164,7 +164,7 @@ header {
   }
 }
 
-.restaurants {
+.Restaurants {
   padding: 48px 20px 68px;
 
   .restaurantsCards {
@@ -214,14 +214,33 @@ footer {
 
 // Tablettes (min-width: 768px)
 @media (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
 }
 
 // Desktop (min-width: 1024px)
 @media (min-width: 1024px) {
-  body {
-    font-size: 20px;
+  .Fonctionnement {
+    padding: 50px 180px;
+
+    .stepsFonctionnement {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .Restaurants {
+    padding: 0 180px;
+    margin: 40px 0 40px;
+
+    .restaurantsCards {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 50px;
+    }
+
+    .Card {
+      box-sizing: border-box;
+      width: calc(50% - 25px);
+    }
   }
 }
