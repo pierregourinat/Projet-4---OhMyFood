@@ -243,4 +243,20 @@ footer {
       width: calc(50% - 25px);
     }
   }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 100px;
+    height: 114px;
+
+    .footerLinks {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 25px;
+      margin: 0;
+    }
+  }
 }

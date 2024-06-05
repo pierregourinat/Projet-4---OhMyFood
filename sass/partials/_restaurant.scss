@@ -74,3 +74,28 @@
     margin-bottom: 40px;
   }
 }
+
+@media (min-width: 1024px) {
+  .pageCover {
+    img {
+      height: 283px;
+      object-fit: cover;
+      object-position: 0 -400px;
+    }
+  }
+
+  .bgRestaurant {
+    display: block;
+    padding: 0 193px;
+    background: $white;
+  }
+
+  .restaurantPage {
+    background: $light-grey;
+    padding: 0 210px;
+
+    .titlePage {
+      justify-content: center;
+    }
+  }
+}
