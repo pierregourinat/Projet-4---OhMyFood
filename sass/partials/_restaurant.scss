@@ -1,3 +1,10 @@
+.restaurantHeader {
+  .logoHeader {
+    gap: 42px;
+    padding: 14px 89px 13px 17px;
+  }
+}
+
 .restaurantPage {
   background: $background-color;
   border-radius: 35px 35px 0 0;
@@ -75,7 +82,25 @@
   }
 }
 
+// Tablettes (min-width: 768px)
+// @media (min-width: 768px) {
+//   .restaurantHeader {
+//     .logoHeader {
+//       gap: 400px;
+//       padding: 30px 386px 32px 17px;
+//     }
+//   }
+// }
+
+// Desktop (min-width: 1024px)
 @media (min-width: 1024px) {
+  .restaurantHeader {
+    .logoHeader {
+      gap: 572px;
+      padding: 30px 621px 32px 17px;
+    }
+  }
+
   .pageCover {
     img {
       height: 283px;
