@@ -40,6 +40,7 @@
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
+    position: relative;
   }
   h5::after {
     content: "";
@@ -47,10 +48,11 @@
     width: 40px;
     height: 3px;
     position: absolute;
-    top: 136px;
-    left: 15px;
+    top: 22px;
+    left: 2px;
   }
   .detailPlat {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -58,28 +60,48 @@
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+    &:before {
+      content: "<<";
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: -59px;
+      width: 59px;
+      height: 69px;
+      background-color: #99e2d0;
+      color: white;
+      border-radius: 0 10px 10px 0;
+      transition: all 0.2s linear 0s;
+    }
+
+    &:hover:before {
+      right: 0;
+    }
   }
-  .titlePlat {
-    color: $black;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  .subtitlePlat {
-    color: $black;
-    font-family: Roboto;
-    font-size: 15.043px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-  .buttonCommander {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
+}
+.titlePlat {
+  color: $black;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.subtitlePlat {
+  color: $black;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.buttonCommander {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 // Tablettes (min-width: 768px)
