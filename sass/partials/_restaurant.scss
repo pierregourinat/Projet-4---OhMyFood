@@ -54,7 +54,6 @@
   .detailPlat {
     position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     background: $white;
     padding: 15px;
@@ -63,7 +62,7 @@
     overflow: hidden;
     &:before {
       content: "\f058";
-      font-family: Font Awesome 6 Free;
+      font-family: "Font Awesome 6 Free";
       font-size: 15px;
       display: flex;
       align-items: center;
@@ -82,38 +81,38 @@
     &:hover:before {
       right: 0;
     }
-  }
-  .prixPlat {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    transition: transform 0.2s linear;
-  }
 
-  &:hover .prixPlat {
-    transform: translateX(-59px);
-  }
-  .textPlat {
-    overflow: hidden;
-  }
-  .titlePlat {
-    color: $black;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  .subtitlePlat {
-    color: $black;
-    font-family: Roboto;
-    font-size: 15.043px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    .prixPlat {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      transition: transform 0.2s linear;
+    }
+
+    &:hover .prixPlat {
+      transform: translateX(-59px);
+    }
+    .textPlat {
+      overflow: hidden;
+    }
+    .titlePlat {
+      color: $black;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .subtitlePlat {
+      color: $black;
+      font-family: Roboto;
+      font-size: 15.043px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
   }
 }
-
 .buttonCommander {
   display: flex;
   justify-content: center;
