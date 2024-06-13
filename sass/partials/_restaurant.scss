@@ -49,7 +49,7 @@
     height: 3px;
     position: absolute;
     top: 22px;
-    left: 2px;
+    left: 1px;
   }
   .detailPlat {
     position: relative;
@@ -60,10 +60,8 @@
     border-radius: 15px;
     box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    &:before {
-      content: "\f058";
-      font-family: "Font Awesome 6 Free";
-      font-size: 15px;
+
+    .checkPlat {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -72,13 +70,17 @@
       right: -59px;
       width: 59px;
       height: 70px;
-      background-color: #99e2d0;
+      background-color: $tertiary-color;
       color: white;
       border-radius: 0 15px 15px 0;
       transition: all 0.2s linear 0s;
+
+      i {
+        font-size: 20px;
+      }
     }
 
-    &:hover:before {
+    &:hover .checkPlat {
       right: 0;
     }
 
@@ -92,9 +94,11 @@
     &:hover .prixPlat {
       transform: translateX(-59px);
     }
+
     .textPlat {
       overflow: hidden;
     }
+
     .titlePlat {
       color: $black;
       font-family: Roboto;
@@ -103,6 +107,7 @@
       font-weight: 500;
       line-height: normal;
     }
+
     .subtitlePlat {
       color: $black;
       font-family: Roboto;
