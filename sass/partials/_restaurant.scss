@@ -95,8 +95,12 @@
       transform: translateX(-59px);
     }
 
-    .textPlat {
+    &:hover .textPlat p {
+      text-overflow: ellipsis;
+      width: 220px;
+      white-space: nowrap;
       overflow: hidden;
+      transition: all 0.2s linear 0s;
     }
 
     .titlePlat {
