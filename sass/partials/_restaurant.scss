@@ -19,144 +19,109 @@
     display: flex;
     gap: 12px;
     flex-direction: column;
-    .detailPlat:nth-child(1) {
-      animation-delay: 0.1s;
-    }
-    .detailPlat:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-    .detailPlat:nth-child(3) {
-      animation-delay: 0.3s;
-    }
   }
-}
-.titlePage {
-  display: flex;
-  align-items: center;
-  margin: 32px 17px 0;
-  gap: 40px;
-}
-h3 {
-  font-family: $title-font;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-h5 {
-  font-family: $font-stack;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  text-transform: uppercase;
-  position: relative;
-}
-h5::after {
-  content: "";
-  background-color: $tertiary-color;
-  width: 40px;
-  height: 3px;
-  position: absolute;
-  top: 22px;
-  left: 1px;
-}
-// ANIMATION  APPARITION DES PLATS
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.detailPlat {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  background: $white;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  opacity: 0;
-  animation: fadeInUp 0.5s forwards;
-  animation-delay: 0s;
-
-  &:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-  &:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  &:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-
-  .checkPlat {
+  .titlePage {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    right: -59px;
-    width: 59px;
-    height: 70px;
-    background-color: $tertiary-color;
-    color: white;
-    border-radius: 0 15px 15px 0;
-    transition: all 0.2s linear 0s;
-
-    i {
-      font-size: 20px;
-    }
+    margin: 32px 17px 0;
+    gap: 40px;
   }
-
-  &:hover .checkPlat {
-    right: 0;
-  }
-
-  .prixPlat {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    transition: transform 0.2s linear;
-  }
-
-  &:hover .prixPlat {
-    transform: translateX(-59px);
-  }
-
-  &:hover .textPlat p {
-    text-overflow: ellipsis;
-    width: 220px;
-    white-space: nowrap;
-    overflow: hidden;
-    transition: all 0.2s linear 0s;
-  }
-
-  .titlePlat {
-    color: $black;
-    font-family: Roboto;
-    font-size: 18px;
+  h3 {
+    font-family: $title-font;
+    font-size: 28px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
   }
-
-  .subtitlePlat {
-    color: $black;
-    font-family: Roboto;
-    font-size: 15.043px;
+  h5 {
+    font-family: $font-stack;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+  }
+  h5::after {
+    content: "";
+    background-color: $tertiary-color;
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    top: 22px;
+    left: 1px;
+  }
+  .detailPlat {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    background: $white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    .checkPlat {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: -59px;
+      width: 59px;
+      height: 70px;
+      background-color: $tertiary-color;
+      color: white;
+      border-radius: 0 15px 15px 0;
+      transition: all 0.2s linear 0s;
+
+      i {
+        font-size: 20px;
+      }
+    }
+
+    &:hover .checkPlat {
+      right: 0;
+    }
+
+    .prixPlat {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      transition: transform 0.2s linear;
+    }
+
+    &:hover .prixPlat {
+      transform: translateX(-59px);
+    }
+
+    &:hover .textPlat p {
+      text-overflow: ellipsis;
+      width: 220px;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: all 0.2s linear 0s;
+    }
+
+    .titlePlat {
+      color: $black;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .subtitlePlat {
+      color: $black;
+      font-family: Roboto;
+      font-size: 15.043px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
   }
 }
-
 .buttonCommander {
   display: flex;
   justify-content: center;
