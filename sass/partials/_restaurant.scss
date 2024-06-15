@@ -14,12 +14,39 @@
   flex-direction: column;
   gap: 40px;
   margin-top: -50px;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   .Menu {
     padding: 0 15px 0;
     display: flex;
     gap: 12px;
     flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
   }
+
+  .animationDelay1 {
+    animation-delay: 0.1s;
+  }
+
+  .animationDelay2 {
+    animation-delay: 0.2s;
+  }
+
+  .animationDelay3 {
+    animation-delay: 0.3s;
+  }
+
   .titlePage {
     display: flex;
     align-items: center;
@@ -51,6 +78,7 @@
     top: 22px;
     left: 1px;
   }
+
   .detailPlat {
     position: relative;
     display: flex;
@@ -122,6 +150,7 @@
     }
   }
 }
+
 .buttonCommander {
   display: flex;
   justify-content: center;
