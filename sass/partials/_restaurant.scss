@@ -32,7 +32,7 @@
     gap: 12px;
     flex-direction: column;
     opacity: 0;
-    animation: fadeIn 0.5s forwards;
+    animation: fadeIn 0.4s forwards;
   }
 
   .animationDelay1 {
@@ -196,6 +196,12 @@
 
     .titlePage {
       justify-content: center;
+    }
+
+    .checkPlat {
+      &:hover .textPlat p {
+        text-overflow: clip;
+      }
     }
   }
 }
