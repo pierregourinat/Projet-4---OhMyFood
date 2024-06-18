@@ -53,6 +53,7 @@
     margin: 32px 17px 0;
     gap: 40px;
   }
+
   h3 {
     font-family: $title-font;
     font-size: 28px;
@@ -89,6 +90,16 @@
     box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 
+    .textPlat {
+      flex: 1;
+      min-width: 0;
+      p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
     .checkPlat {
       display: flex;
       align-items: center;
@@ -113,9 +124,7 @@
     }
 
     .prixPlat {
-      position: absolute;
-      right: 15px;
-      bottom: 15px;
+      padding-left: 10px;
       transition: transform 0.2s linear;
     }
 
@@ -123,12 +132,9 @@
       transform: translateX(-59px);
     }
 
-    &:hover .textPlat p {
-      text-overflow: ellipsis;
-      width: 220px;
-      white-space: nowrap;
-      overflow: hidden;
+    &:hover .textPlat {
       transition: all 0.2s linear 0s;
+      padding-right: 50px;
     }
 
     .titlePlat {
