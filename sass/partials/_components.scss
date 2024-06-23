@@ -131,7 +131,7 @@
   }
   46% {
     transform: scaleX(0.81);
-    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+    animation-timing-function: cubic-bezier(0.25, 0.25, 1, 0.8);
   }
   100% {
     transform: scaleX(1);
