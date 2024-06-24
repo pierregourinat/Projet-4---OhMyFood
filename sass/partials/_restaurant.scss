@@ -14,6 +14,7 @@
   flex-direction: column;
   gap: 40px;
   margin-top: -50px;
+  max-width: 1024px;
 
   @keyframes fadeIn {
     0% {
@@ -163,16 +164,6 @@
   margin-bottom: 40px;
 }
 
-// Tablettes (min-width: 768px)
-// @media (min-width: 768px) {
-//   .restaurantHeader {
-//     .logoHeader {
-//       gap: 400px;
-//       padding: 30px 386px 32px 17px;
-//     }
-//   }
-// }
-
 // Desktop (min-width: 1024px)
 @media (min-width: 1024px) {
   .restaurantHeader {
@@ -198,7 +189,8 @@
 
   .restaurantPage {
     background: $light-grey;
-    padding: 0 210px;
+    margin-left: auto;
+    margin-right: auto;
 
     .titlePage {
       justify-content: center;

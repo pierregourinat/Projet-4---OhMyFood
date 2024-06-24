@@ -14,7 +14,9 @@
     &:checked + .Heart .fa-solid {
       opacity: 1;
       transform: scale(1);
+      -webkit-background-clip: text;
       background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 
@@ -46,7 +48,9 @@
       opacity: 0;
       transform: scale(0);
       background: linear-gradient(to bottom, $primary-color, $secondary-color);
+      -webkit-background-clip: text;
       background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
