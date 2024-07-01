@@ -35,19 +35,19 @@
     gap: 12px;
     flex-direction: column;
     opacity: 0;
-    animation: fadeIn 0.4s forwards;
+    animation: fadeIn 0.5s forwards;
   }
 
   .animationDelay1 {
-    animation-delay: 0.2s;
-  }
-
-  .animationDelay2 {
     animation-delay: 0.5s;
   }
 
-  .animationDelay3 {
+  .animationDelay2 {
     animation-delay: 0.8s;
+  }
+
+  .animationDelay3 {
+    animation-delay: 1s;
   }
 
   .titlePage {
