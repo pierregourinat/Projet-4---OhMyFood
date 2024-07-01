@@ -1,0 +1,58 @@
+@import "variables";
+@import "reset";
+@import "base";
+
+// HEADER
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: $white;
+
+  .logoHeader {
+    display: flex;
+    height: 63px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+    align-items: center;
+  }
+
+  i {
+    color: $black;
+  }
+
+  .logoTitle {
+    font-family: $title-font;
+    font-size: 30px;
+  }
+
+  .formNav {
+    background: $light-grey;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .locationIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $dark-grey;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+  }
+  input {
+    width: 130px;
+    text-align: center;
+    border: none;
+    height: 50px;
+    font-weight: 500;
+    color: $dark-grey;
+    background: $light-grey;
+  }
+}

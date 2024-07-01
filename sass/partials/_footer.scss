@@ -1,0 +1,58 @@
+@import "variables";
+@import "reset";
+@import "base";
+
+// FOOTER
+
+footer {
+  color: $white;
+  background: $dark-grey;
+  padding: 22px 25px;
+
+  .footerTitle {
+    font-family: $title-font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-family: $font-stack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .icon-footer {
+    width: 11px;
+    height: 13px;
+    margin-right: 11px;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 100px;
+    height: 114px;
+
+    .footerLinks {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 25px;
+      margin: 0;
+    }
+  }
+}
